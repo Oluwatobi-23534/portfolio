@@ -59,70 +59,112 @@ export const personalInfo = [
 
   {
     id: 4,
-    title: 'Nationality : ',
-    description: 'Nigerian',
+    title: "Nationality : ",
+    description: "Nigerian",
   },
 
   {
     id: 5,
-    title: 'Freelance : ',
-    description: 'Available',
+    title: "Freelance : ",
+    description: "Available",
   },
 
   {
     id: 6,
-    title: 'Address : ',
-    description: 'Lagos',
+    title: "Address : ",
+    description: "Lagos",
   },
 
   {
     id: 7,
-    title: 'Phone : ',
-    description: '+2349162837696',
+    title: "Phone : ",
+    description: "+2349162837696",
   },
 
   {
     id: 8,
-    title: 'Email : ',
-    description: 'Oluwatobi23534@gmail.com',
+    title: "Email : ",
+    description: "Oluwatobi23534@gmail.com",
   },
 
   {
     id: 9,
-    title: 'Skype : ',
-    description: 'tobi.daniel',
+    title: "Skype : ",
+    description: "tobi.daniel",
   },
 
   {
     id: 10,
-    title: 'Languages : ',
-    description: 'English',
+    title: "Languages : ",
+    description: "English",
   },
 ];
 
 export const stats = [
   {
     id: 1,
-    no: '2+',
-    title: 'Years of <br/> Experience'
+    no: "2+",
+    title: "Years of <br/> Experience",
   },
 
   {
     id: 2,
-    no: '10+',
-    title: 'Completed <br/> projects'
+    no: "10+",
+    title: "Completed <br/> projects",
   },
 
   {
     id: 3,
-    no: '5+',
-    title: 'Happy <br/> Customers'
+    no: "5+",
+    title: "Happy <br/> Customers",
   },
 
   {
     id: 4,
-    no: '2+',
-    title: 'Awards <br/> Won'
+    no: "2+",
+    title: "Awards <br/> Won",
   },
+];
 
-]
+export const skills = [
+  {
+    id: 1,
+    title: "HTML",
+    percentage: "90",
+  },
+  {
+    id: 2,
+    title: "JAVASCRIPT",
+    percentage: "90",
+  },
+  {
+    id: 3,
+    title: "CSS",
+    percentage: "90",
+  },
+  {
+    id: 4,
+    title: "REACT",
+    percentage: "90",
+  },
+  {
+    id: 5,
+    title: "TAILWINDCSS",
+    percentage: "90",
+  },
+  {
+    id: 6,
+    title: "MONGODB",
+    percentage: "90",
+  },
+  {
+    id: 7,
+    title: "NEXTJS",
+    percentage: "70",
+  },
+  {
+    id: 8,
+    title: "PYTHON",
+    percentage: "90",
+  },
+];

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@500;600;800&family=Ubuntu+Condensed&display=swap");
 
 :root {
-  --first-color: hsl(255,75%,50%);
+  --first-color: hsl(240, 100%, 10%);
   --title-color: hsl(0, 0%, 40%);
   --text-color: hsl(0, 0%, 50%);
   --body-color: hsl(0, 0%, 100%);
