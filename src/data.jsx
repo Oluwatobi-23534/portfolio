@@ -168,3 +168,56 @@ export const skills = [
     percentage: "90",
   },
 ];
+
+export const resume = [
+  {
+    id: 1,
+    category: "experience",
+    icon: <FaBriefcase />,
+    year: "2021 - PRESENT",
+    title: "Web Developer <span> NUmerique de luxe innovations </span>",
+    desc: "As a Web Developer at Numerique de Luxe Innovations, I create innovative digital solutions, transforming ideas into reality and enhancing our luxury brand's online presence.",
+  },
+
+  {
+    id: 2,
+    category: "experience",
+    icon: <FaBriefcase />,
+    year: "2023 - PRESENT",
+    title: "Python Apprentice <span> Bincom Dev Center</span>",
+    desc: "Started my journey in the tech world with Bincom Dev Center as a Python Apprentice, learning from industry experts, work on real projects, and gaining valuable experience in Python development.",
+  },
+
+  {
+    id: 3,
+    category: "education",
+    icon: <FaGraduationCap />,
+    year: "2015-2019",
+    title: "BEd Biology <span> University Of Lagos</span>",
+    desc: "Earned a BEd in Biology from the University of Lagos. Gained in-depth knowledge of biological concepts and honed analytical skills, preparing for a career in the science and education fields.",
+  },
+  {
+    id: 4,
+    category: "education",
+    icon: <FaGraduationCap />,
+    year: "06.10.2023",
+    title: "Javascript Masterclass: Zero To Job Ready With 10 Projects <span> Udemy </span>",
+    desc: "Completed a comprehensive Javascript Masterclass on Udemy, going from zero to job-ready. Developed proficiency in Javascript through hands-on experience with 10 real-world projects.",
+  },
+  {
+    id: 5,
+    category: "education",
+    icon: <FaGraduationCap />,
+    year: "2023",
+    title: "Diploma in Website Development Using HTML and CSS. <span> Alison </span>",
+    desc: "Achieved a Diploma in Website Development Using HTML and CSS from Alison. Acquired practical skills in creating dynamic, interactive websites, enhancing web development proficiency.",
+  },
+  {
+    id: 6,
+    category: "education",
+    icon: <FaGraduationCap />,
+    year: "2023",
+    title: "Advanced Diploma in Python Programming. <span> Alison </span>",
+    desc: "Secured an Advanced Diploma in Python Programming from Alison. This course provided a deep dive into Python, enhancing my programming skills and preparing me for complex coding challenges.",
+  },
+];
