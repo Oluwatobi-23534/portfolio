@@ -1,9 +1,23 @@
-import React from 'react'
+/* eslint-disable no-unused-vars */
+import React from "react";
+import { portfolio } from "../../data";
+import PortfolioItem from "../../components/PortfolioItem";
+import './Portfolio.css'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
-  )
-}
+    <section className="portfolio section">
+      <h2 className="section__title">
+        My <span>Portfolio</span>
+      </h2>
 
-export default Portfolio
+      <div className="portfolio__container container grid">
+        {portfolio.map((item) => {
+          return <PortfolioItem key={item.id} {...item} />;
+        })}
+      </div>
+    </section>
+  );
+};
+
+export default Portfolio;

@@ -9,6 +9,14 @@ import {
 } from "react-icons/fa";
 import { FiFileText, FiUser, FiExternalLink } from "react-icons/fi";
 
+
+import Work1 from './assets/cryptolanding.png';
+import Work2 from './assets/luxurydealr.png';
+import Work3 from './assets/bigcity.png';
+import Work4 from './assets/bookmark_manager.png'
+import Work5 from './assets/google.png'
+import Work6 from './assets/authapp.png'
+
 export const links = [
   {
     id: 1,
@@ -221,3 +229,173 @@ export const resume = [
     desc: "Secured an Advanced Diploma in Python Programming from Alison. This course provided a deep dive into Python, enhancing my programming skills and preparing me for complex coding challenges.",
   },
 ];
+
+export const portfolio = [
+  {
+    id: 1,
+    img: Work1,
+    title: 'Crypto Landing Platform',
+    details: [
+      {
+        icon: <FiFileText/>,
+        title: 'Project : ',
+        desc: 'Photo'
+      },
+      {
+        icon: <FiUser/>,
+        title: 'Client : ',
+        desc: 'Private Client'
+      },
+      {
+        icon: <FaCode/>,
+        title: 'Language : ',
+        desc: 'HTML, CSS, JavaScript'
+      },
+      {
+        icon: <FiExternalLink/>,
+        title: 'Preview : ',
+        desc: 'https://vivid-crypto.netlify.app/'
+      },
+    ]
+  },
+
+  {
+    id: 2,
+    img: Work2,
+    title: 'Order & Delivery Platform',
+    details: [
+      {
+        icon: <FiFileText/>,
+        title: 'Project : ',
+        desc: 'Photo'
+      },
+      {
+        icon: <FiUser/>,
+        title: 'Client : ',
+        desc: 'Luxury Dealr'
+      },
+      {
+        icon: <FaCode/>,
+        title: 'Language : ',
+        desc: 'REACT'
+      },
+      {
+        icon: <FiExternalLink/>,
+        title: 'Preview : ',
+        desc: 'https://luxurydealr.vercel.app/'
+      },
+    ]
+  },
+
+  {
+    id: 3,
+    img: Work3,
+    title: 'Real Estate',
+    details: [
+      {
+        icon: <FiFileText/>,
+        title: 'Project : ',
+        desc: 'Photo'
+      },
+      {
+        icon: <FiUser/>,
+        title: 'Client : ',
+        desc: 'Private Client'
+      },
+      {
+        icon: <FaCode/>,
+        title: 'Language : ',
+        desc: 'Javascript'
+      },
+      {
+        icon: <FiExternalLink/>,
+        title: 'Preview : ',
+        desc: 'https://bigcity-estate.onrender.com/'
+      },
+    ]
+  },
+
+  {
+    id: 4,
+    img: Work4,
+    title: 'Bookmark manager',
+    details: [
+      {
+        icon: <FiFileText/>,
+        title: 'Project : ',
+        desc: 'Photo'
+      },
+      {
+        icon: <FiUser/>,
+        title: 'Client : ',
+        desc: 'Private Client'
+      },
+      {
+        icon: <FaCode/>,
+        title: 'Language : ',
+        desc: 'Javascript'
+      },
+      {
+        icon: <FiExternalLink/>,
+        title: 'Preview : ',
+        desc: 'https://vivid-bookmark-manager.netlify.app/'
+      },
+    ]
+  },
+
+  {
+    id: 5,
+    img: Work5,
+    title: 'Google clone',
+    details: [
+      {
+        icon: <FiFileText/>,
+        title: 'Project : ',
+        desc: 'Photo'
+      },
+      {
+        icon: <FiUser/>,
+        title: 'Client : ',
+        desc: 'Private Client'
+      },
+      {
+        icon: <FaCode/>,
+        title: 'Language : ',
+        desc: 'Next, JavaScript'
+      },
+      {
+        icon: <FiExternalLink/>,
+        title: 'Preview : ',
+        desc: 'https://google-clone-nextjs13-liart.vercel.app/'
+      },
+    ]
+  },
+
+  {
+    id: 6,
+    img: Work6,
+    title: 'Authentication App',
+    details: [
+      {
+        icon: <FiFileText/>,
+        title: 'Project : ',
+        desc: 'Photo'
+      },
+      {
+        icon: <FiUser/>,
+        title: 'Client : ',
+        desc: 'Private Client'
+      },
+      {
+        icon: <FaCode/>,
+        title: 'Language : ',
+        desc: 'JavaScript'
+      },
+      {
+        icon: <FiExternalLink/>,
+        title: 'Preview : ',
+        desc: 'https://auth-app-5jdr.onrender.com/'
+      },
+    ]
+  }
+]
