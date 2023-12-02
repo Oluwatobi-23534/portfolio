@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@500;600;800&family=Ubuntu+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Montserrat:wght@500;600;800&family=Play&display=swap");
 
 :root {
   --first-color: hsl(240, 100%, 10%);
@@ -9,8 +9,8 @@
   --border-color: hsl(0, 0%, 87%);
   --text-white: #fff;
 
-  --body-font: "Ubuntu Condensed", sans-serif;
-  --second-font: "Poppins", sans-serif;
+  --body-font: 'Play', sans-serif;
+  --second-font: 'Montserrat', sans-serif;
 
   --big-font-size: 56px;
   --h1-font-size: 50px;
