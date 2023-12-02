@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import {
   FaEnvelopeOpen,
@@ -13,6 +14,62 @@ import { FiSend } from "react-icons/fi";
 import "./Contact.css";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [alert, setAlert] = useState({ show: false, message: "", type: "" });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_bap63vn";
+    const templateId = "template_axerx56";
+    const publicKey = "tqSB1OLqpguZ6VIWG";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      from_subject: subject,
+      to_name: "Tobi Daniel",
+      message: message,
+    };
+
+    // Send the mail using Emailjs
+
+    if (name && email && subject && message) {
+      setAlert({
+        show: true,
+        message: "Message sent successfully!",
+        type: "success",
+      });
+      emailjs
+        .send(serviceId, templateId, templateParams, publicKey)
+        .then((response) => {
+          console.log("Email sent successfully!", response);
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+        })
+        .catch((error) => {
+          console.error("Error sending email:", error);
+        });
+      setTimeout(() => {
+        setAlert({ show: false, message: "", type: "" });
+      }, 10000);
+    } else {
+      setAlert({
+        show: true,
+        message: "Please fill out all fields.",
+        type: "error",
+      });
+      setTimeout(() => {
+        setAlert({ show: false, message: "", type: "" });
+      }, 10000);
+    }
+  };
+
   return (
     <section className="contact section">
       <h2 className="section__title">
@@ -71,10 +128,12 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="contact__form">
+        <form onSubmit={handleSubmit} className="contact__form">
           <div className="form__input-group">
             <div className="form__input-div">
               <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 type="text"
                 placeholder="How may i address you?"
                 className="form__control"
@@ -82,6 +141,8 @@ const Contact = () => {
             </div>
             <div className="form__input-div">
               <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 placeholder="Enter your email..."
                 className="form__control"
@@ -89,6 +150,8 @@ const Contact = () => {
             </div>
             <div className="form__input-div">
               <input
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
                 type="text"
                 placeholder="Enter your subject..."
                 className="form__control"
@@ -98,18 +161,34 @@ const Contact = () => {
 
           <div className="form__input-div">
             <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               placeholder="Enter your message..."
               className="form__control textarea"
             ></textarea>
           </div>
 
-          <button className="button">
+          <button type="submit" className="button">
             Send Message
             <span className="button__icon contact__button-icon">
-              <FiSend/>
+              <FiSend />
             </span>
           </button>
         </form>
+
+        {alert.show && (
+          <div
+            style={{
+              margin: "10px 0",
+              padding: "10px",
+              color: alert.type === "success" ? "green" : "red",
+              border: `1px solid ${alert.type === "success" ? "green" : "red"}`,
+              borderRadius: "5px",
+            }}
+          >
+            {alert.message}
+          </div>
+        )}
       </div>
     </section>
   );
